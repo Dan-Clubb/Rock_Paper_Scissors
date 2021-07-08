@@ -1,0 +1,75 @@
+body {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: bold;
+    background-color: #F8B607;
+}
+
+h1 {
+    margin: 35px 0 65px 0;
+    font-size: 50px;
+    text-decoration: underline;
+}
+
+#result-txt {
+    margin-bottom: 0;
+    font-size: 20px;
+}
+
+.game-userface {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    color: white;
+}
+
+.game-box {
+    background-color: #0749f8;
+    padding: 0 5px 5px 5px;
+    border-radius: 10px;
+}
+
+#player {
+    margin: 0 10px 0 0; 
+}
+
+#computer {
+    margin: 0 0 0 10px;
+}
+
+.score-display {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.score-display * {
+    margin: 5px;
+}
+
+.choices {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.choice {
+    background-color: whitesmoke;
+    margin: 15px;
+    padding: 0 10px 0 10px;
+    height: fit-content;
+    border-radius: 3px;
+    box-shadow: 4px 5px black;
+}
+
+.choice > img {
+    height: 80px;
+    width: 80px;
+}
+
+.choice > p {
+    margin-bottom: 5px;
+    color: black;
+}

@@ -4,35 +4,57 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href=" .css">
+    <link rel="stylesheet" href="style.css">
     <title>Rock Paper Scissors</title>
 </head>
 <body>
     <h1>Rock Paper Scissors</h1>
     <div class="round-results">
-        <p>Pick rock paper or scissors to start.</p>
+        <p id="result-txt">Pick rock paper or scissors to start.</p>
     </div>
     <section class="game-userface">
-        <div class="player">
+        <div class="game-box" id="player">
             <h2>PLAYER</h2>
-            <img src="" alt="player">
-            <h4>SCORE:</h4>
-            <p class="player-score">0</p>
+            <div class="score-display">
+                <img src="images/user.png" alt="user">
+                <h4>SCORE:</h4>
+                <p class="player-score">0</p>
+            </div>
             <div class="choices">
-                <button class="choice" id="rock">ROCK</button>
-                <button class="choice" id="paper">PAPER</button>
-                <button class="choice" id="scissors">SCISSORS</button>
+                <div class="choice">
+                    <p>ROCK</p>
+                    <img id="rock" src="images/hand-rock.png" alt="rock">
+                </div>
+                <div class="choice" id="paper">
+                    <p>PAPER</p>
+                    <img src="images/hand.png" alt="paper">
+                </div>
+                <div class="choice" id="scissors">
+                    <p>SCISSORS</p>
+                    <img src="images/hand-scissors.png" alt="scissors">
+                </div>
             </div>
         </div>
-        <div class="computer">
+        <div class="game-box" id="computer">
             <h2>COMPUTER</h2>
-            <img src="" alt="computer">
-            <h4>SCORE:</h4>
-            <p class="computer-score">0</p>
+            <div class="score-display">
+                <img src="images/computer.png" alt="computer">
+                <h4>SCORE:</h4>
+                <p class="computer-score">0</p>
+            </div>
             <div class="choices">
-                <button class="choice" id="rock">ROCK</button>
-                <button class="choice" id="paper">PAPER</button>
-                <button class="choice" id="scissors">SCISSORS</button>
+                <div class="choice" id="rock">
+                    <p>ROCK</p>
+                    <img src="images/hand-rock.png" alt="rock">
+                </div>
+                <div class="choice" id="paper">
+                    <p>PAPER</p>
+                    <img src="images/hand.png" alt="paper">
+                </div>
+                <div class="choice" id="scissors">
+                    <p>SCISSORS</p>
+                    <img src="images/hand-scissors.png" alt="scissors">
+                </div>
             </div>
         </div>
     </section>
