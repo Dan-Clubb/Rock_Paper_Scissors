@@ -4,10 +4,68 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Rock Paper Scissors</title>
 </head>
 <body>
-    <h1>Rock Paper Scissors</h1>
+    <main class="disappear">
+        <h1>Rock Paper Scissors</h1>
+        <div class="round-results">
+            <p id="result-txt">A game of first to 5. Pick rock paper or scissors to start.</p>
+        </div>
+        <section class="game-userface">
+            <div class="game-box" id="player">
+                <h2>PLAYER</h2>
+                <div class="score-display">
+                    <img class="user-image" src="images/user.png" alt="user">
+                    <h4>SCORE:</h4>
+                    <p class="player-score">0</p>
+                </div>
+                <div class="choices">
+                    <div class="choice player-choice" id="p-rock">
+                        <p>ROCK</p>
+                        <img id="rock" src="images/hand-rock.png" alt="rock">
+                    </div>
+                    <div class="choice player-choice" id="p-paper">
+                        <p>PAPER</p>
+                        <img src="images/hand.png" alt="paper">
+                    </div>
+                    <div class="choice player-choice" id="p-scissors">
+                        <p>SCISSORS</p>
+                        <img src="images/hand-scissors.png" alt="scissors">
+                    </div>
+                </div>
+            </div>
+            <div class="game-box" id="computer">
+                <h2>COMPUTER</h2>
+                <div class="score-display">
+                    <img class="computer-image" src="images/computer.png" alt="computer">
+                    <h4>SCORE:</h4>
+                    <p class="computer-score">0</p>
+                </div>
+                <div class="choices">
+                    <div class="choice computer-choice" id="c-rock">
+                        <p>ROCK</p>
+                        <img src="images/hand-rock.png" alt="rock">
+                    </div>
+                    <div class="choice computer-choice" id="c-paper">
+                        <p>PAPER</p>
+                        <img src="images/hand.png" alt="paper">
+                    </div>
+                    <div class="choice computer-choice" id="c-scissors">
+                        <p>SCISSORS</p>
+                        <img src="images/hand-scissors.png" alt="scissors">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <div class="game-over">
+        <h1>Rock Paper Scissors</h1>
+        <p id="game-result-txt"></p>
+        <button class="restart" onclick="playAgain()">Play Again?</button>
+    </div>
 </body>
 </html>
-<script src="main.js"></script>
+ <script src="main.js"></script> 
+

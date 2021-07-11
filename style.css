@@ -1,0 +1,125 @@
+body {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: bold;
+    background-color: #F8B607;
+}
+
+h1 {
+    margin: 35px 0 65px 0;
+    font-size: 50px;
+    text-decoration: underline;
+}
+
+#result-txt {
+    margin-bottom: 0;
+    font-size: 20px;
+}
+
+.game-userface {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    color: white;
+}
+
+.game-box {
+    background-color: #0749f8;
+    padding: 0 5px 5px 5px;
+    border-radius: 10px;
+}
+
+#player {
+    margin: 0 10px 0 0; 
+}
+
+#computer {
+    margin: 0 0 0 10px;
+}
+
+.score-display {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.score-display * {
+    margin: 5px;
+}
+
+.choices {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.choice {
+    background-color: whitesmoke;
+    margin: 15px;
+    padding: 0 10px 0 10px;
+    height: fit-content;
+    border-radius: 3px;
+    box-shadow: 4px 5px black;
+    transform: translate(-1%, -3%);
+}
+
+.player-choice:hover {
+    cursor: pointer;
+    box-shadow: 3px 3px 1px black;
+    background-color: lightgray;
+    transform: translate(1%, -1%);
+    transition: all 0.1s ease-in;
+}
+
+.player-choice:active {
+    box-shadow: none;
+    transform: translate(3px, 4px);
+}
+
+.choice > img {
+    height: 80px;
+    width: 80px;
+}
+
+.choice > p {
+    margin-bottom: 5px;
+    color: black;
+}
+
+.restart {
+    background-color: #0749f8;
+    color: white;
+    font-size: 26px;
+    font-weight: bold;
+    width: fit-content;
+    height: auto;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+/* styles for when the user or computer reach a score of 5
+   removes the game ui a show the a result message and score
+   adds a button and img*/
+
+.game-over {
+    display: none;
+}
+
+#game-over-screen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#game-result-txt {
+    margin-bottom: 60px;
+    font-size: 25px;
+}
+
+#game-over-screen > img {
+    width: 55px;
+    height: 55px;
+}
+
